@@ -5,7 +5,7 @@ class Solution {
         int answer = 0;
         ArrayList<Integer> array = new ArrayList<Integer>();    
 
-        for (int i = 1; i < nums.length; i++) {       
+        for (int i = 1; i < nums.length; i++) {       // 왜 1부터인지? array[0]에 값을 넣은적이 없는데 contains를 사용할 수 있는지?
             if (!array.contains(nums[i])) {                       // array 에 nums[i] 값이 없다면 
                 array.add(nums[i]);                                  // 값 추가
             }
